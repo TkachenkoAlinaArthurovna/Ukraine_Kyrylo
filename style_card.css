@@ -29,3 +29,11 @@ a:hover {
 h1 {
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .card_section {
+    flex-direction: column;
+  }
+  .card_section div {
+    width: 100%;
+  }
+}

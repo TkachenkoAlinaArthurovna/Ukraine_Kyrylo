@@ -1,0 +1,20 @@
+.section-history {
+  display: flex;
+}
+.kosak {
+  width: 50%;
+}
+.left {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .section-history {
+    flex-direction: column;
+  }
+  .kosak {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+}
