@@ -1,0 +1,31 @@
+.card_section {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 40px;
+}
+.card_section div {
+  width: 50%;
+}
+.card_section img {
+  width: 100%;
+}
+.back {
+  margin: 20px;
+}
+
+a {
+  display: flex;
+  width: max-content;
+  padding: 20px;
+  text-decoration: none;
+  color: blue;
+  transition: all 0.5s linear;
+}
+a:hover {
+  color: yellow;
+  background: blue;
+}
+h1 {
+  text-align: center;
+}

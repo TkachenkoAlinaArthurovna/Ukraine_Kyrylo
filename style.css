@@ -1,0 +1,146 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main {
+  flex: 1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px;
+  background: blue;
+  color: white;
+}
+footer {
+  height: 100px;
+  background: yellow;
+}
+.section_1 {
+  display: flex;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid blue;
+  transition: all 0.5s linear;
+}
+.card:hover {
+  background: yellow;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.logo {
+  height: 80px;
+  width: auto;
+}
+.menu {
+  height: 40px;
+  width: auto;
+}
+.section_title {
+  text-align: center;
+}
+.wrapper_for_cities {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.city {
+  padding: 4px 10px 4px 10px;
+  background-color: yellow;
+  border: 1px solid blue;
+  cursor: pointer;
+  color: blue;
+  transition: all 0.5s linear;
+}
+.city:hover {
+  background-color: blue;
+  color: yellow;
+}
+.wrapper_for_map {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
+[data-id="kyiv"] {
+  position: absolute;
+  top: 150px;
+  right: 450px;
+}
+[data-id="lviv"] {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+}
+[data-id="odesa"] {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+}
+[data-id="kharkiv"] {
+  position: absolute;
+  top: 200px;
+  left: 720px;
+}
+[data-id="chernihiv"] {
+  position: absolute;
+  top: 100px;
+  left: 470px;
+}
+[data-id="cherkasy"] {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+}
+.pin {
+  padding: 4px;
+  background-color: white;
+  color: blue;
+  opacity: 0;
+}
+.kvadrat {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+@media (max-width: 1024px) {
+  .section_1 {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 40%;
+  }
+  .wrapper_for_map {
+    width: 100%;
+    overflow: auto;
+  }
+  .wrapper_for_map img {
+    width: 900px;
+  }
+}
